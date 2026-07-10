@@ -1,0 +1,32 @@
+# Node.js
+node_modules/
+frontend/node_modules/
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Virtual Environment
+venv/
+.venv/
+env/
+
+# Environment Variables
+.env
+*.env
+
+# Generated Files
+generated/
+uploads/
+*.pdf
+*.aux
+*.log
+*.out
+
+# VS Code
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db
