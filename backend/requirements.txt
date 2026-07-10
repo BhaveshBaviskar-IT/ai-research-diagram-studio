@@ -1,0 +1,5 @@
+Flask
+python-dotenv
+ibm-watsonx-ai
+requests
+pylatexenc

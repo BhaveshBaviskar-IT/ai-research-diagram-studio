@@ -1,0 +1,35 @@
+
+\documentclass[tikz,border=10pt]{standalone}
+
+\usepackage{tikz}
+\usetikzlibrary{trees,positioning,arrows.meta,shapes}
+
+\begin{document}
+
+\begin{tikzpicture}[node distance=2cm]
+    \tikzstyle{block} = [rectangle, draw, fill=blue!10, 
+        text width=8em, text centered, rounded corners, minimum height=3em]
+    \tikzstyle{line} = [draw, -latex']
+
+    % Nodes
+    \node (user) [block] {User Interface (React)};
+    \node (flask) [block, below of=user] {Flask Backend};
+    \node (ibm) [block, below of=flask] {IBM Granite AI Model};
+    \node (generator) [block, below of=ibm] {TikZ Code Generator};
+    \node (compiler) [block, below of=generator] {LaTeX Compiler};
+    \node (pdf) [block, below of=compiler] {PDF Generator};
+    \node (viewer) [block, below of=pdf] {Output Viewer};
+
+    % Connections
+    \draw [line] (user) -- (flask);
+    \draw [line] (flask) -- (ibm);
+    \draw [line] (ibm) -- (generator);
+    \draw [line] (generator) -- (compiler);
+    \draw [line] (compiler) -- (pdf);
+    \draw [line] (pdf) -- (viewer);
+
+    % Feedback loop
+    \draw [line, dashed] (viewer) |- ([yshift=-1cm]flask.south) -| (flask);
+\end{tikzpicture}
+
+\end{document}

@@ -1,0 +1,48 @@
+.main{
+    flex:1;
+    padding:30px;
+}
+
+textarea{
+    width:100%;
+    padding:15px;
+    font-size:18px;
+    border-radius:10px;
+    resize:vertical;
+}
+
+.generate{
+    margin-top:20px;
+    background:#0f62fe;
+    color:white;
+    border:none;
+    padding:15px 35px;
+    border-radius:8px;
+    cursor:pointer;
+    font-size:18px;
+}
+
+.generate:hover{
+    background:#0353e9;
+}
+
+iframe{
+    width:100%;
+    border:none;
+    margin-top:20px;
+    border-radius:10px;
+}
+
+.card{
+    background:white;
+    padding:25px;
+    border-radius:12px;
+    margin-bottom:20px;
+    box-shadow:0 4px 10px rgba(0,0,0,.1);
+}
+
+.tabs{
+    display:flex;
+    gap:15px;
+    margin-bottom:20px;
+}
