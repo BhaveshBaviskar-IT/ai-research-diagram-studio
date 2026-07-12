@@ -3,3 +3,4 @@ python-dotenv
 ibm-watsonx-ai
 requests
 pylatexenc
+gunicorn==23.0.0
