@@ -26,13 +26,11 @@ def generate():
     print("===== GENERATED TIKZ =====")
     print(tikz)
 
-    files = compile_tikz(tikz)
-
     return jsonify({
-        "tikz": tikz,
-        "pdf": files["pdf"],
-        "tex": files["tex"]
-    })
+    "tikz": tikz,
+    "pdf": None,
+    "tex": None
+})
 
 @app.route("/generated/<path:filename>")
 def generated(filename):
